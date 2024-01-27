@@ -122,6 +122,9 @@ body {
 }
 
 @media (max-width: 425px) {
+  body {
+    overflow: hidden;
+  }
   .header {
     width: 90%;
     margin: 0 auto;
@@ -139,6 +142,9 @@ body {
 }
 
 @media (max-width: 800px) and (min-width: 426px) {
+  body {
+    overflow: hidden;
+  }
   .header {
     width: 90%;
   }
