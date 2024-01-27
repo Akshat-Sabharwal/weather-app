@@ -2,6 +2,7 @@
   background-color: var(--bg-section);
   border-radius: var(--radius);
   padding: 3rem 2.5rem;
+  min-width: max-content;
   grid-area: others;
 }
 
@@ -14,4 +15,5 @@
   color: var(--font-main);
   font-size: calc(var(--fs-common));
   letter-spacing: 0.05rem;
+  gap: 5rem;
 }

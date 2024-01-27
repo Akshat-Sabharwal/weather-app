@@ -103,6 +103,14 @@ body {
   letter-spacing: 0.05rem;
 }
 
+.error,
+.start {
+  color: var(--font-main);
+  font-size: 2rem;
+  letter-spacing: 0.1rem;
+  margin: 15rem 0;
+}
+
 .main {
   display: grid;
   grid-template-columns: repeat(11, 1fr);
@@ -113,10 +121,35 @@ body {
   margin: 5rem auto;
 }
 
-.error,
-.start {
-  color: var(--font-main);
-  font-size: 2rem;
-  letter-spacing: 0.1rem;
-  margin: 15rem 0;
+@media (max-width: 425px) {
+  .header {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .main {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    grid-template-areas: "location location location" "feelslike icon icon" "temperature temperature temperature" "others others others" "others others others";
+    grid-gap: 2rem;
+    max-width: 78vw;
+    margin: 5rem auto;
+  }
+}
+
+@media (max-width: 800px) and (min-width: 426px) {
+  .header {
+    width: 90%;
+  }
+
+  .main {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-areas: "location location location location icon icon" "temperature temperature temperature temperature temperature feelslike" "others others others others others others" "others others others others others others";
+    grid-gap: 2rem;
+    max-width: 78vw;
+    margin: 5rem auto;
+  }
 }
