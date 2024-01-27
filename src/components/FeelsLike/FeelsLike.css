@@ -1,0 +1,12 @@
+.feels-like {
+  background-color: var(--bg-section);
+  border-radius: var(--radius);
+  padding: 1.5rem;
+  gap: 1.2rem;
+  grid-area: feelslike;
+}
+
+.feels-like p {
+  color: var(--font-main);
+  font-size: calc(var(--fs-common));
+}

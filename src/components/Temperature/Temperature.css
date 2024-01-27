@@ -1,0 +1,32 @@
+.temp-container {
+  background-color: var(--bg-section);
+  border-radius: var(--radius);
+  padding: 1.5rem;
+  padding-right: 3rem;
+  gap: 2rem;
+  grid-area: temperature;
+}
+
+.temp-container img {
+  max-width: 4rem;
+}
+
+.min-max-temp {
+  gap: 1rem;
+  margin: 0 auto;
+}
+
+.sun-time {
+  gap: 1rem;
+  margin: 0 auto;
+}
+
+.sunrise,
+.sunset,
+.temp-minTemp,
+.temp-maxTemp {
+  gap: 1rem;
+  font-size: var(--fs-common);
+  color: var(--font-main);
+  letter-spacing: 0.05rem;
+}

@@ -1,0 +1,36 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap");
+
+:root {
+  /* -------------- */
+  /* Colors         */
+  /* -------------- */
+
+  --bg-dark: hsl(245, 11%, 21%);
+  --bg-light: hsl(0, 0%, 98%);
+  --bg-section: hsla(0, 0%, 0%, 0.18);
+
+  --diffused-blue: hsla(205, 70%, 71%, 76%);
+  --diffused-purple: hsl(224, 60%, 76%);
+
+  --font-main: hsl(0, 0%, 79%);
+  --font-sub: hsl(0, 0%, 58%);
+
+  /* -------------- */
+  /* Font           */
+  /* -------------- */
+  font-family: "Quicksand";
+  font-weight: 500;
+  font-style: none;
+
+  --fs-logo: 3rem;
+  --fs-location: 3.5rem;
+  --fs-temp: 3.2rem;
+  --fs-condition: 2rem;
+  --fs-description: 1.5rem;
+  --fs-common: 2.3rem;
+
+  /* -------------- */
+  /* Others         */
+  /* -------------- */
+  --radius: 1.2rem;
+}

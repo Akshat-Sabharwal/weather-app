@@ -1,0 +1,17 @@
+.others-container {
+  background-color: var(--bg-section);
+  border-radius: var(--radius);
+  padding: 3rem 2.5rem;
+  grid-area: others;
+}
+
+.others-data {
+  height: 100%;
+}
+
+.others-data-item {
+  width: 100%;
+  color: var(--font-main);
+  font-size: calc(var(--fs-common));
+  letter-spacing: 0.05rem;
+}

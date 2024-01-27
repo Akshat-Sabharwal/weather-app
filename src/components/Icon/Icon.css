@@ -1,0 +1,10 @@
+.container {
+  background-color: var(--bg-section);
+  border-radius: var(--radius);
+  padding: 1rem;
+  grid-area: icon;
+}
+
+.container img {
+  max-width: 10rem;
+}

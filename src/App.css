@@ -1,0 +1,122 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: var(--bg-dark);
+  overflow: hidden;
+}
+
+/* -------------- */
+/* Utility        */
+/* -------------- */
+
+.flex-left-row {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-flow: row nowrap;
+}
+
+.flex-spaced-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-flow: row nowrap;
+}
+
+.flex-left-column {
+  display: flex;
+  justify-content: center;
+  align-items: left;
+  flex-flow: column nowrap;
+}
+
+.flex-center-column {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column nowrap;
+}
+
+.flex-spaced-column {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-flow: column nowrap;
+}
+
+.diffused-blue {
+  position: absolute;
+  width: 45rem;
+  height: 45rem;
+  right: 68vw;
+  top: 80vh;
+  border-radius: 50%;
+  background-color: var(--diffused-blue);
+  filter: blur(20rem);
+  z-index: -1;
+}
+
+.diffused-purple {
+  position: absolute;
+  width: 45rem;
+  height: 45rem;
+  left: 90vw;
+  bottom: 55vh;
+  border-radius: 50%;
+  background-color: var(--diffused-purple);
+  filter: blur(20rem);
+  z-index: -1;
+}
+
+.header {
+  top: 0;
+  width: 80%;
+  margin: 0rem auto;
+  padding: 1rem;
+  border-bottom-left-radius: var(--radius);
+  border-bottom-right-radius: var(--radius);
+  background: var(--bg-section);
+}
+
+.logo {
+  font-size: var(--fs-logo);
+  background: linear-gradient(82deg, #95b7ea 2.67%, #bf8af3 100.01%);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  margin-left: 1rem;
+}
+
+.search-box {
+  width: 30%;
+  outline: none;
+  border: none;
+  border-radius: calc(var(--radius) - 0.8rem);
+  background: var(--bg-section);
+  padding: 0.7rem 1.2rem;
+  margin-right: 0.3rem;
+  font-size: var(--fs-condition);
+  font-family: "Quicksand";
+  color: var(--font-sub);
+  letter-spacing: 0.05rem;
+}
+
+.main {
+  display: grid;
+  grid-template-columns: repeat(11, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-template-areas: "location location location location icon icon others others others others others" "temperature temperature temperature temperature temperature feelslike others others others others others";
+  grid-gap: 2rem;
+  max-width: 78vw;
+  margin: 5rem auto;
+}
+
+.error,
+.start {
+  color: var(--font-main);
+  font-size: 2rem;
+  letter-spacing: 0.1rem;
+  margin: 15rem 0;
+}
