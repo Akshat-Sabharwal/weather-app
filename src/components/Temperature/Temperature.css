@@ -31,3 +31,28 @@
   color: var(--font-main);
   letter-spacing: 0.05rem;
 }
+
+@media (max-width: 620px) {
+  .temp-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column nowrap;
+    gap: 3rem;
+  }
+
+  .min-max-temp {
+    width: 80%;
+  }
+  .sun-time {
+    width: 80%;
+  }
+
+  .temp-minTemp,
+  .temp-maxTemp,
+  .sunrise,
+  .sunset {
+    width: 100%;
+    justify-content: space-between;
+  }
+}

@@ -15,5 +15,5 @@
   color: var(--font-main);
   font-size: calc(var(--fs-common));
   letter-spacing: 0.05rem;
-  gap: 5rem;
+  gap: 3rem;
 }

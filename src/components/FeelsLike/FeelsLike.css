@@ -3,7 +3,6 @@
   border-radius: var(--radius);
   padding: 1.5rem;
   gap: 1.2rem;
-  /* min-width: max-content; */
   grid-area: feelslike;
 }
 
